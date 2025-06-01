@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<h1 id="welcome-title">Welcome to the Random GIF Generator!</h1>
+<h2 id="welcome-instruction">Search to get Started!</h2>
+
+<form action="/search" method="post" class="search-form">
+  <input type="search" name="input" placeholder="SEARCH HERE!" required />
+  <button type="submit">🔍</button>
+</form>
+
+<div class="home-page-images">
+    <img src=<%= image1 %> alt="Trending Image 1">
+    <img src=<%= image2 %> alt="Trending Image 2">
+    <img src=<%= image3 %> alt="Trending Image 3">
+</div>
+
+<%- include("partials/footer.ejs") %>

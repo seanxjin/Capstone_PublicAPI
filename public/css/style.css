@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+}
+
+#welcome-title {
+    font-family: "Limelight", sans-serif;
+    display: block;
+    background: linear-gradient(var(--rotate),
+            #FF0080,
+            #7928CA,
+            #2AFADF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 3%;
+    animation: spin 1s linear infinite;
+}
+
+#welcome-instruction {
+    font-family: "Limelight", sans-serif;
+    display: block;
+    background: linear-gradient(var(--rotate),
+            #FF0080,
+            #7928CA,
+            #2AFADF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 3%;
+    animation: spin 1s linear infinite;
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 135deg;
+    inherits: false;
+}
+
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+
+    100% {
+        --rotate: 360deg;
+    }
+}
+
+.search-form {
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.search-form input[type="search"] {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    transition: padding 0.3s ease;
+}
+
+.search-form:hover input[type="search"]:hover,
+.search-form input[type="search"]:focus {
+    border-color: #007BFF;
+    box-shadow: 4px, 5px, 5px, #007BFF;
+    padding: 25px;
+}
+
+.search-form button[type="submit"] {
+    padding: 8px 16px;
+    border: 1px solid #007BFF;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #007BFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out, padding 0.3s ease;
+}
+
+
+.search-form button:hover,
+.search-form button:focus {
+    background-color: #0056b3;
+    padding: 25px;
+}
+
+.home-page-images {
+    padding: 5%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.home-page-images img {
+    width: 33.33333333333%;
+    margin: 0;
+}
+
+.home-page-images img[alt="Trending Image 1"] {
+    margin-right: 10px;
+}
+
+.home-page-images img[alt="Trending Image 2"] {
+    margin: 0 10px;
+}
+
+.home-page-images img[alt="Trending Image 3"] {
+    margin-left: 10px;
+}
