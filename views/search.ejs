@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<h1 id="search-title">Generate GIF!</h1>
+
+<form action="/search" method="post" class="search-form">
+  <input type="search" name="input" placeholder="SEARCH HERE!" required />
+  <button type="submit">🔍</button>
+</form>
+
+<div class="searched-images">
+  <img src=<%= image1 %> alt="img1">
+  <img src=<%= image2 %> alt="img2">
+  <img src=<%= image3 %> alt="img3">
+  <img src=<%= image4 %> alt="img4">
+  <img src=<%= image5 %> alt="img5">
+  <img src=<%= image6 %> alt="img6">
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>
